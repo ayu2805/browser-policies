@@ -1,0 +1,81 @@
+{
+    "AIModeSettings": 1,
+    "AutofillGenAiSettings": 2,
+    "AutofillSettings": [
+        {
+            "blocked_types": [
+                "all"
+            ],
+            "url_pattern": "*"
+        }
+    ],
+    "BackgroundModeEnabled": false,
+    "BlockThirdPartyCookies": true,
+    "ChromeSuggestionsSettings": 1,
+    "ClearBrowsingDataOnExitList": [
+        "browsing_history",
+        "download_history",
+        "cached_images_and_files",
+        "password_signin",
+        "autofill",
+        "site_settings",
+        "hosted_app_data"
+    ],
+    "CookiesAllowedForUrls": [
+        "accounts.google.com",
+        "github.com",
+        "sso.crunchyroll.com",
+        "web.whatsapp.com"
+    ],
+    "CreateThemesSettings": 2,
+    "DefaultAutomaticDownloadsSetting": 1,
+    "DefaultCookiesSetting": 4,
+    "DefaultGeolocationSetting": 2,
+    "DefaultIdleDetectionSetting": 2,
+    "DefaultNotificationsSetting": 2,
+    "DefaultSearchProviderEnabled": true,
+    "DefaultSearchProviderName": "DuckDuckGo",
+    "DefaultSearchProviderSearchURL": "https://duckduckgo.com/?q={searchTerms}",
+    "DevToolsGenAiSettings": 2,
+    "DnsOverHttpsMode": "secure",
+    "DnsOverHttpsTemplates": "https://cloudflare-dns.com/dns-query",
+    "GeminiActOnWebSettings": 1,
+    "GeminiSparkSettings": 1,
+    "GenAILocalFoundationalModelSettings": 1,
+    "HelpMeWriteSettings": 2,
+    "HighEfficiencyModeEnabled": false,
+    "HistoryClustersVisible": false,
+    "HistorySearchSettings": 2,
+    "HomepageLocation": "chrome://new-tab-page",
+    "HttpsOnlyMode": "force_balanced_enabled",
+    "NTPCardsVisible": false,
+    "NewTabPageLocation": "chrome://new-tab-page",
+    "PasswordLeakDetectionEnabled": false,
+    "PasswordManagerEnabled": false,
+    "PaymentMethodQueryEnabled": false,
+    "PromotionsEnabled": false,
+    "RestoreOnStartup": 5,
+    "SafeBrowsingProtectionLevel": 0,
+    "SearchContentSharingSettings": 1,
+    "SearchSuggestEnabled": false,
+    "SmartTabSharingSettings": 1,
+    "SyncTypesListDisabled": [
+        "apps",
+        "autofill",
+        "bookmarks",
+        "extensions",
+        "preferences",
+        "passwords",
+        "payments",
+        "productComparison",
+        "readingList",
+        "tabs",
+        "themes",
+        "typedUrls",
+        "wifiConfigurations"
+    ],
+    "TabCompareSettings": 2,
+    "ThirdPartyAiChatSettings": 1,
+    "TryOnYouSettings": 2,
+    "VoiceTypingSettings": 2
+}

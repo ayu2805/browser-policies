@@ -1,0 +1,74 @@
+{
+    "policies": {
+        "AIControls": {
+            "Default": {
+                "Locked": true,
+                "Value": "blocked"
+            },
+            "Translations": {
+                "Locked": true,
+                "Value": "available"
+            }
+        },
+        "ClearOnShutdown": {
+            "BrowsingHistoryAndDownloads": true,
+            "Cache": true,
+            "CookiesAndStorage": true,
+            "Exceptions": [
+                "https://accounts.google.com",
+                "https://github.com",
+                "https://sso.crunchyroll.com",
+                "https://web.whatsapp.com"
+            ],
+            "FormData": true,
+            "SiteSettings": true
+        },
+        "Cookies": {
+            "Behavior": "reject-foreign",
+            "BehaviorPrivateBrowsing": "reject-foreign",
+            "Locked": true
+        },
+        "DisableFeedbackCommands": true,
+        "DisableFirefoxStudies": true,
+        "DisableMasterPasswordCreation": true,
+        "DisableProfileImport": true,
+        "DisableRemoteImprovements": true,
+        "DisableSetDesktopBackground": true,
+        "DisableTelemetry": true,
+        "EnableTrackingProtection": {
+            "Category": "strict",
+            "Locked": true,
+            "Value": true
+        },
+        "ExtensionSettings": {
+            "uBlock0@raymondhill.net": {
+                "installation_mode": "force_installed",
+                "private_browsing": true
+            }
+        },
+        "NoDefaultBookmarks": true,
+        "SearchEngines": {
+            "Add": [
+                {
+                    "Name": "DuckDuckGo",
+                    "URLTemplate": "https://duckduckgo.com/?q={searchTerms}"
+                }
+            ],
+            "Default": "DuckDuckGo",
+            "PreventInstalls": true,
+            "Remove": [
+                "Bing",
+                "Perplexity",
+                "Wikipedia (en)"
+            ]
+        },
+        "SkipTermsOfUse": true,
+        "UserMessaging": {
+            "ExtensionRecommendations": false,
+            "FeatureRecommendations": false,
+            "FirefoxLabs": false,
+            "Locked": true,
+            "MoreFromMozilla": false
+        }
+    }
+}
