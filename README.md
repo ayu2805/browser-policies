@@ -10,7 +10,7 @@ sudo curl https://raw.githubusercontent.com/ayu2805/browser-policies/main/firefo
 sudo curl https://raw.githubusercontent.com/ayu2805/browser-policies/main/firefox_autoconfig.js \
 -o /usr/lib/firefox/defaults/pref/autoconfig.js
 sudo curl https://raw.githubusercontent.com/ayu2805/browser-policies/main/firefox_preferences.cfg \
--o /usr/lib/firefox/firefox.cfg
+-o /usr/lib/firefox/firefox_pref.cfg
 ```
 
 ### Google Chrome:
