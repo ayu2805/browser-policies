@@ -18,7 +18,8 @@
                 "https://accounts.google.com",
                 "https://github.com",
                 "https://sso.crunchyroll.com",
-                "https://web.whatsapp.com"
+                "https://web.whatsapp.com",
+                "https://youtube.com"
             ],
             "FormData": true,
             "SiteSettings": true
