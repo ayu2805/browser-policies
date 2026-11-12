@@ -48,6 +48,7 @@
             }
         },
         "NoDefaultBookmarks": true,
+        "PasswordManagerEnabled": false,
         "SearchEngines": {
             "Add": [
                 {
