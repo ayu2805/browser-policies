@@ -117,3 +117,6 @@ Set-FirefoxPolicy -Path $UserMessaging -Name "FeatureRecommendations" -Value 0
 Set-FirefoxPolicy -Path $UserMessaging -Name "FirefoxLabs" -Value 0
 Set-FirefoxPolicy -Path $UserMessaging -Name "Locked" -Value 1
 Set-FirefoxPolicy -Path $UserMessaging -Name "MoreFromMozilla" -Value 0
+
+Write-Host "Firefox policies have been applied successfully." -ForegroundColor Green
+Write-Host "Restart Firefox, then check about:policies." -ForegroundColor Yellow
