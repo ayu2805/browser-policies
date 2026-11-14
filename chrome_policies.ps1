@@ -38,20 +38,16 @@ function Set-ChromeString {
 
 Set-ChromeDword -Name "AIModeSettings" -Value 1
 Set-ChromeDword -Name "AutofillGenAiSettings" -Value 2
-
-$autofillSettings = ConvertTo-Json @(
+Set-ChromeString -Name "AutofillSettings" -Value (ConvertTo-Json @(
     @{
         blocked_types = @("all")
-        url_pattern  = "*"
+        url_pattern = "*"
     }
-) -Compress
-Set-ChromeString -Name "AutofillSettings" -Value $autofillSettings
-
+) -Compress)
 Set-ChromeDword -Name "BackgroundModeEnabled" -Value 0
 Set-ChromeDword -Name "BlockThirdPartyCookies" -Value 1
 Set-ChromeDword -Name "ChromeSuggestionsSettings" -Value 1
-
-$clearBrowsingDataOnExitList = ConvertTo-Json @(
+Set-ChromeString -Name "ClearBrowsingDataOnExitList" -Value (ConvertTo-Json @(
     "browsing_history",
     "download_history",
     "cached_images_and_files",
@@ -59,17 +55,13 @@ $clearBrowsingDataOnExitList = ConvertTo-Json @(
     "autofill",
     "site_settings",
     "hosted_app_data"
-) -Compress
-Set-ChromeString -Name "ClearBrowsingDataOnExitList" -Value $clearBrowsingDataOnExitList
-
-$cookiesAllowedForUrls = ConvertTo-Json @(
+) -Compress)
+Set-ChromeString -Name "CookiesAllowedForUrls" -Value (ConvertTo-Json @(
     "accounts.google.com",
     "github.com",
     "sso.crunchyroll.com",
     "web.whatsapp.com"
-) -Compress
-Set-ChromeString -Name "CookiesAllowedForUrls" -Value $cookiesAllowedForUrls
-
+) -Compress)
 Set-ChromeDword -Name "CreateThemesSettings" -Value 2
 Set-ChromeDword -Name "DefaultAutomaticDownloadsSetting" -Value 1
 Set-ChromeDword -Name "DefaultCookiesSetting" -Value 4
@@ -102,24 +94,16 @@ Set-ChromeDword -Name "SafeBrowsingProtectionLevel" -Value 0
 Set-ChromeDword -Name "SearchContentSharingSettings" -Value 1
 Set-ChromeDword -Name "SearchSuggestEnabled" -Value 0
 Set-ChromeDword -Name "SmartTabSharingSettings" -Value 1
-
-$syncTypesList = ConvertTo-Json @(
-    "apps",
-    "autofill",
+Set-ChromeString -Name "SyncTypesListDisabled" -Value (ConvertTo-Json @(
     "bookmarks",
     "extensions",
-    "preferences",
-    "passwords",
-    "payments",
-    "productComparison",
-    "readingList",
+    "history",
+    "settings",
     "tabs",
     "themes",
-    "typedUrls",
-    "wifiConfigurations"
-) -Compress
-Set-ChromeString -Name "SyncTypesListDisabled" -Value $syncTypesList
-
+    "typed_urls",
+    "wifi_configurations"
+) -Compress)
 Set-ChromeDword -Name "TabCompareSettings" -Value 2
 Set-ChromeDword -Name "ThirdPartyAiChatSettings" -Value 1
 Set-ChromeDword -Name "TryOnYouSettings" -Value 2
