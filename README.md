@@ -13,6 +13,11 @@ sudo curl https://raw.githubusercontent.com/ayu2805/browser-policies/main/firefo
 -o /usr/lib/firefox/firefox_pref.cfg
 ```
 
+On Windows, run the command:
+```powershell
+irm https://raw.githubusercontent.com/ayu2805/browser-policies/main/firefox_policies.ps1 | iex
+```
+
 ### Google Chrome:
 
 On Linux, run the command:
