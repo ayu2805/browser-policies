@@ -77,7 +77,7 @@ Set-ChromeDword -Name "DefaultGeolocationSetting" -Value 2
 Set-ChromeDword -Name "DefaultIdleDetectionSetting" -Value 2
 Set-ChromeDword -Name "DefaultNotificationsSetting" -Value 2
 Set-ChromeDword -Name "DefaultSearchProviderEnabled" -Value 1
-Set-ChromeString -Name "DefaultSearchProviderName" -Value "DuckDuckGo",
+Set-ChromeString -Name "DefaultSearchProviderName" -Value "DuckDuckGo"
 Set-ChromeString -Name "DefaultSearchProviderSearchURL" -Value "https://duckduckgo.com/?q={searchTerms}"
 Set-ChromeDword -Name "DevToolsGenAiSettings" -Value 2
 Set-ChromeString -Name "DnsOverHttpsMode" -Value "secure"
