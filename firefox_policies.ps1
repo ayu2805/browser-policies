@@ -87,12 +87,10 @@ Set-FirefoxPolicy -Path $EnableTrackingProtection -Name "Category" -Value "stric
 Set-FirefoxPolicy -Path $EnableTrackingProtection -Name "Locked" -Value 1
 Set-FirefoxPolicy -Path $EnableTrackingProtection -Name "Value" -Value 1
 
-Set-FirefoxPolicy -Name "ExtensionSettings" -Value (ConvertTo-Json @{
-    "uBlock0@raymondhill.net" = @{
-        installation_mode = "force_installed"
-        private_browsing = 1
-    }
-} -Compress)
+$uBlockOrigin = Join-Path $FirefoxPolicyPath "ExtensionSettings\uBlock0@raymondhill.net"
+New-Item -Path $uBlockOrigin -Force | Out-Null
+Set-FirefoxPolicy -Path $uBlockOrigin -Name "installation_mode" -Value "force_installed"
+Set-FirefoxPolicy -Path $uBlockOrigin -Name "private_browsing" -Value 1
 
 Set-FirefoxPolicy -Name "NoDefaultBookmarks" -Value 1
 Set-FirefoxPolicy -Name "PasswordManagerEnabled" -Value 0
